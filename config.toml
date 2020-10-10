@@ -1,0 +1,31 @@
+baseURL = "http://shoukoo.github.io/"
+publishDir = "docs"
+languageCode = "en-us"
+title = "Random Thoughts from Shoukoo"
+theme = "archie"
+copyright = "© Shoukoo"
+
+[[params.social]]
+name = "GitHub"
+icon = "github"
+url = "https://github.com/shoukoo"
+
+[[menu.main]]
+name = "home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "about"
+url = "/about"
+weight = 3
+
+[[menu.main]]
+name = "tags"
+url = "/tags"
+weight = 4
