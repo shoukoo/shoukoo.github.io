@@ -1,4 +1,4 @@
-deployg:
+deploy:
 	rm -r docs
 	./deploy.sh
 
