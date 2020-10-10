@@ -10,6 +10,11 @@ name = "GitHub"
 icon = "github"
 url = "https://github.com/shoukoo"
 
+[[params.social]]
+name = "Twitter"
+icon = "twitter"
+url = "https://twitter.com/realshoukoo"
+
 [[menu.main]]
 name = "home"
 url = "/"
