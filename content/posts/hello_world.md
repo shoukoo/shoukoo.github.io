@@ -1,7 +1,7 @@
 ---
 title: "Hello_world"
 date: 2020-10-11T09:14:21+11:00
-draft: true
+draft: false
 ---
 
 # Hello_world
