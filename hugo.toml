@@ -1,0 +1,4 @@
+baseURL = 'https://shoukoo.github.io/'
+languageCode = 'en-us'
+title = 'Shoukoo Think Space'
+theme = "hugo-bearblog"
