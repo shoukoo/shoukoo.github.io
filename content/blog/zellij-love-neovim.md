@@ -20,7 +20,9 @@ I've to admit that the title of this blog is misleading. The reality is that usi
 
 Rebinding to a different modifier key is challenging because Zellij only supports Alt and Ctrl modifier keys, and [does not handle composition keys](https://github.com/zellij-org/zellij/issues/735) like `Ctrl Shift o`. 
 
-The common workaround of this issue is to stay in the Lock mode when working with Neovim to block Zellij's shortcuts and then exiting the Lock mode to use Zellij features. I tried this solution for a few days, it's just not suitable for me as I often forgot to lock/unlock, I need to come up with a solution.
+The common workaround of this issue is to stay in the Lock mode when working with Neovim to block Zellij's shortcuts and then exiting the Lock mode to use Zellij features. 
+
+I gave this solution a shot for a few days, but it didn't quite work for me. I found myself often forgetting to lock/unlock, so I knew I needed to figure out a different approach.
 
 ## Solution
 My solution is quite simple - make use of the Tmux mode and clear out all key bindings in the Normal mode. The Normal mode in Zellij is similar to the one in Neovim, where you always return when exiting from other modes. And by clearing all the defaults in Normal mode enables me to work freely in Neovim and switch to other modes from the Tmux mode. 
