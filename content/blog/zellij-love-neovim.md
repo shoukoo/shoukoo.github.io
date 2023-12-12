@@ -11,12 +11,12 @@ tags = ["neovim","zellij"]
 +++
 
 ## Intro
-Hello, I recently made a switch from Tmux to [Zellij](https://zellij.dev/), and I have been very happy with the move. It was quite an easy switch, I didn't need to customise much of my setup, thank to the intuitive design of Zellij. For example, the builtin keybindings are easy to remember and also logical; you can press **+** or **-** to resize panes and navigating between panes with arrow keys. And the interface provides you helpful tips to remind you the keybindings for each action. Overtime, all these little details have added up, and significantly reduce the need to google "How to do X". 
+Hello, I recently made a switch from Tmux to [Zellij](https://zellij.dev/), and I have been very happy with the move. It was quite an easy switch, I didn't need to customise much of my setup, thank to the intuitive design of Zellij. For example, the builtin keybindings are easy to remember and also logical; you can press + or - to resize panes and navigating between panes with arrow keys. And the interface provides you helpful tips to remind you the keybindings for each action. Overtime, all these little details have added up, and significantly reduce the need to google "How to do X". 
 
 I could go on forever on the features I love in Zellij, but for now, let's focus on the primary subject: Neovim + Zellij.
 
 ## Problem
-I've to admit that the title of this blog is misleading. The reality is that using Neovim with the builtin setup in Zellij can be quite challenging. The main reason is Zellij's use of the "Ctrl" key as the modifier key to switch between [modes](https://zellij.dev/documentation/keybindings-modes), which overlaps with many existing shortcuts in Neovim. For instance, **Ctrl o** switch to the `Session` mode in Zellij, but that key is associated with the jumplist in Neovim. And **Ctrl t** switches to the `Tabs` mode in Zellij, but it's used for interacting with the tagstack. 
+I've to admit that the title of this blog is misleading. The reality is that using Neovim with the builtin setup in Zellij can be quite challenging. The main reason is Zellij's use of the "Ctrl" key as the modifier key to switch between [modes](https://zellij.dev/documentation/keybindings-modes), which overlaps with many existing shortcuts in Neovim. For instance, `Ctrl o` switch to the Session mode in Zellij, but that key is associated with the jumplist in Neovim. And `Ctrl t` switches to the Tabs mode in Zellij, but it's used for interacting with the tagstack. 
 
 Rebinding to a different modifier key is challenging because Zellij only supports Alt and Ctrl modifier keys, and [does not handle composition keys](https://github.com/zellij-org/zellij/issues/735) like `Ctrl Shift o`. 
 
@@ -74,4 +74,4 @@ Lastly, I made some adjustments in the Tmux mode by clearing the defaults and re
 ```
 
 This is it! With this setup I can use `Ctrl f t` in Normal mode to switch to the Tab mode, mirroring a workflow similar to that in Tmux.
-As a former Tmux user, this approach feels like returning home. I also added other common shortcuts that bind along with Alt key, you can see the final configuration [here](https://github.com/shoukoo/dotfiles/blob/master/zellij.kdl). 
+As a former Tmux user, this approach feels like returning home. I also added other common shortcuts that bind along with the Alt key, you can see the final configuration [here](https://github.com/shoukoo/dotfiles/blob/master/zellij.kdl). 
